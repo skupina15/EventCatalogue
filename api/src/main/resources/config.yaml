@@ -1,0 +1,25 @@
+kumuluzee:
+  name: event-catalogue-service
+  env:
+    name: dev
+  version: 1.0.0
+  server:
+    base-url: http://localhost:8080
+    http:
+      port: 8080
+  datasources:
+    - jndi-name: jdbc/Climb
+      #connection-url: jdbc:postgresql://climb-db:5432/climb-db
+      connection-url: jdbc:postgresql://localhost:5432/climb-db
+      username: dbuser
+      password: postgres
+#  health:
+#    checks:
+#      data-source-health-check:
+#        type: liveness
+#        jndi-name: jdbc/Climb
+#      disk-space-health-check:
+#        threshold: 100000
+rest-properties:
+#  maintenance-mode: false
+  print: Config print
