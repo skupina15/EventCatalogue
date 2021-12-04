@@ -67,16 +67,6 @@
                 <version>${kumuluz-health.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.kumuluz.ee.openapi</groupId>
-                <artifactId>kumuluzee-openapi</artifactId>
-                <version>${kumuluzee-openapi.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.kumuluz.ee.openapi</groupId>
-                <artifactId>kumuluzee-openapi-ui</artifactId>
-                <version>${kumuluzee-openapi.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>com.kumuluz.ee.config</groupId>
                 <artifactId>kumuluzee-config-consul</artifactId>
                 <version>${kumuluzee-config.version}</version>

@@ -2,7 +2,7 @@
 
 maven -> clean, package
 
-docker build ime .
+docker build -t ime .
 
 docker run -d --name climb-db -e POSTGRES_USER=dbuser -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=climb-db -p 5432:5432 postgres:13
 java -jar ./api/target/api-1.0.0-SNAPSHOT.jar
@@ -18,20 +18,20 @@ consul -> consul agent -dev
 
 
 ## Azure
-install Azure CLI
+// install Azure CLI
 open cmd
-az aks install-cli
+// az aks install-cli
 az login
 az account set --subscription 93e7bea7-07f6-4624-a530-259ee9dadfda
 az aks get-credentials --resource-group climbapp_group_1637075572689 --name climbapp
 kubectl get nodes
 // cd to your kubernetes deployment.yaml (C:\Users\Jana\Documents\fax\mag\1.letnik\RSO\EventCatalogueImage\EventCatalogue\k8s)
-kubectl create -f event-catalogue-deployment.yaml
+// kubectl create -f event-catalogue-deployment.yaml
 kubectl apply -f event-catalogue-deployment.yaml
 kubectl get services
 EXTERNAL-IP:[PORT]/[REST path] in browser
 kubectl get services
 kubectl get deployments
 kubectl get pods
-kubectl logs event-catalogue-deployment-7d6b4b5c7d-qqn9v
+kubectl logs event-catalogue-deployment-68744cc4fc-sxsdw
 kubectl delete pod [image name]
