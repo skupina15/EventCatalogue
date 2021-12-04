@@ -48,8 +48,8 @@ public class Registration {
         return persone;
     }
 
-    public void setPersone(Persone porsone) {
-        this.persone = persone;
+    public void setPersone(Persone person) {
+        this.persone = person;
     }
 
 //    public Event getE() {
