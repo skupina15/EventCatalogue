@@ -33,5 +33,5 @@ EXTERNAL-IP:[PORT]/[REST path] in browser
 kubectl get services
 kubectl get deployments
 kubectl get pods
-kubectl logs event-catalogue-deployment-68744cc4fc-sxsdw
+kubectl logs event-catalogue-deployment-68744cc4fc-????
 kubectl delete pod [image name]
