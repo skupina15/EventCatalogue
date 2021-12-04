@@ -3,11 +3,6 @@
     <persistence-unit name="climb-jpa" transaction-type="JTA">
         <jta-data-source>jdbc/Climb</jta-data-source>
 
-        <class>si.fri.rso.skupina15.entities.Event</class>
-        <class>si.fri.rso.skupina15.entities.Item</class>
-        <class>si.fri.rso.skupina15.entities.Persone</class>
-        <class>si.fri.rso.skupina15.entities.Registration</class>
-        <class>si.fri.rso.skupina15.entities.Rent</class>
 
         <properties>
             <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/> <!-- drops existing database and creaates a new one-->
