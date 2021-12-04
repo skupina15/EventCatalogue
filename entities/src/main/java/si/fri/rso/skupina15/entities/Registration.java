@@ -1,6 +1,5 @@
 package si.fri.rso.skupina15.entities;
 
-import javax.json.bind.annotation.JsonbTransient;
 import javax.persistence.*;
 
 @Entity(name = "registration")
@@ -9,7 +8,6 @@ import javax.persistence.*;
         {
                 @NamedQuery(name = "si.fri.rso.skupina15.entities.Registration.getAll", query = "SELECT r FROM registration r")
         })
-
 public class Registration {
     @Id
     @Column
@@ -23,8 +21,8 @@ public class Registration {
     @JoinColumn(name = "id_persone")
     private Persone persone;
 
-    @JsonbTransient
-    @ManyToOne(fetch = FetchType.LAZY)
+    //@JsonbTransient
+    @ManyToOne//(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_event")
     private Event event;
 
