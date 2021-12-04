@@ -33,7 +33,6 @@
             <artifactId>kumuluzee-rest-core</artifactId>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
