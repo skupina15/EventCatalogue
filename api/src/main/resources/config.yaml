@@ -9,7 +9,7 @@ kumuluzee:
       port: 8081
   discovery:
     etcd:
-      hosts: http://20.85.131.26:2379
+      hosts: http://20.88.165.164:2379
     ttl: 20
     ping-interval: 15
   datasources:
