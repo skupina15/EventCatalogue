@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="climb-db@localhost" uuid="c77b8c24-8f73-4209-98f6-2f049879286c">
+    <data-source source="LOCAL" name="climb-db@localhost" uuid="9e519e77-f3cb-4c03-8245-6a358855227f">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
