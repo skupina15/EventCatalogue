@@ -13,9 +13,8 @@ spec:
         app: event-catalogue
     spec:
       containers:
-        - image: jstrem/event-image:latest
+        - image: jstrem/event-image:2021-12-26-22-25-06
           name: event-catalogue
-          imagePullPolicy: "Always"
           env:
             - name: KUMULUZEE_DATASOURCES0_CONNECTIONURL
               value: jdbc:postgresql://fanny.db.elephantsql.com:5432/bukqntkr
@@ -67,8 +66,8 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-    - port: 8080
+    - port: 3333
       protocol: TCP
-      targetPort: 8080
+      targetPort: server
   selector:
     app: event-catalogue
