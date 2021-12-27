@@ -13,7 +13,7 @@ spec:
         app: event-catalogue
     spec:
       containers:
-        - image: jstrem/event-image:2021-12-26-22-25-06
+        - image: jstrem/event-image:latest
           name: event-catalogue
           env:
             - name: KUMULUZEE_DATASOURCES0_CONNECTIONURL
