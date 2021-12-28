@@ -36,3 +36,6 @@ kubectl get deployments
 kubectl get pods
 kubectl logs event-catalogue-deployment-68744cc4fc-????
 kubectl delete pod [image name]
+
+##ingress
+http://20.120.67.65/events/v1/events

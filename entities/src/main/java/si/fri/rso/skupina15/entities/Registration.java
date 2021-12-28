@@ -21,10 +21,9 @@ public class Registration {
     @JoinColumn(name = "id_persone")
     private Persone persone;
 
-//    @JsonbTransient
-//    @ManyToOne//(fetch = FetchType.LAZY)
-//    @JoinColumn(name = "id_event")
-//    private Event event;
+    @ManyToOne//(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_event")
+    private Event event;
 
     // Getters and setters
 
@@ -52,11 +51,11 @@ public class Registration {
         this.persone = person;
     }
 
-//    public Event getE() {
-//        return event;
-//    }
-//
-//    public void setE(Event e) {
-//        this.event = e;
-//    }
+    public Event getEvent() {
+        return event;
+    }
+
+    public void setEvent(Event e) {
+        this.event = e;
+    }
 }
