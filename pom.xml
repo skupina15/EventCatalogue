@@ -26,8 +26,8 @@
         <kumuluzee-metrics.version>2.3.0</kumuluzee-metrics.version>
         <postgresql.version>42.3.0</postgresql.version>
         <kumuluzee-discovery.version>1.0.0</kumuluzee-discovery.version>
-
         <kumuluzee-openapi.version>1.0.1</kumuluzee-openapi.version>
+        <kumuluzee-cors.version>1.0.5</kumuluzee-cors.version>
     </properties>
 
     <dependencyManagement>
@@ -89,6 +89,11 @@
                 <groupId>com.kumuluz.ee.discovery</groupId>
                 <artifactId>kumuluzee-discovery-etcd</artifactId>
                 <version>${kumuluzee-discovery.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kumuluz.ee.cors</groupId>
+                <artifactId>kumuluzee-cors</artifactId>
+                <version>kumuluzee-cors.version</version>
             </dependency>
             <dependency>
                 <groupId>com.kumuluz.ee</groupId>
