@@ -13,9 +13,9 @@ import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
 //@RegisterService
+@ApplicationPath("v1")
 @OpenAPIDefinition(info = @Info(title = "API for events", version = "v1", contact = @Contact(email = "rso@fri.uni-lj.si"), license = @
         License(name = "dev"), description = "API for events."), servers = @Server(url ="http://20.120.67.65:8080/events/v1"))
-@ApplicationPath("v1")
 @CrossOrigin(name = "my-resource")
 public class EventCatalogueApplication extends Application {
 }

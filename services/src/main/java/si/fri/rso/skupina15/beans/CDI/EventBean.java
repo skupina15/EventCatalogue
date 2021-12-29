@@ -42,10 +42,6 @@ public class EventBean {
     @Transactional
     public Event createEvent(Event event){
         if(event != null) {
-            if(event.getId_event() == null) {
-                log.info("Can't create new event. ID is not defined.");
-                return null;
-            }
             if(event.getTitle() == null) {
                 log.info("Can't create new event. Name is not defined.");
                 return null;
