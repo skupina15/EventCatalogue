@@ -37,5 +37,7 @@ kubectl get pods
 kubectl logs event-catalogue-deployment-68744cc4fc-????
 kubectl delete pod [image name]
 
+kubectl create secret generic backend-user --from-literal=KUMULUZEEDATASOURCES0PASSWORD='E2SE5Ru_O6OGntAqsOJqi-7QClTANW6d'
+
 ##ingress
 http://20.120.67.65/events/v1/events
