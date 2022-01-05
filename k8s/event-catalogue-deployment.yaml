@@ -23,7 +23,7 @@ spec:
             - name: KUMULUZEE_DATASOURCES0_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: pg-pass
+                  name: db-secret
                   key: KUMULUZEEDATASOURCES0PASSWORD
 #             - name: KUMULUZEE_DATASOURCES0_PASSWORD
 #               value: E2SE5Ru_O6OGntAqsOJqi-7QClTANW6d
