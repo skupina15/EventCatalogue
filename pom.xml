@@ -28,10 +28,16 @@
         <kumuluzee-discovery.version>1.0.0</kumuluzee-discovery.version>
         <kumuluzee-openapi.version>1.0.1</kumuluzee-openapi.version>
         <kumuluzee-cors.version>1.0.5</kumuluzee-cors.version>
+        <kumuluzee-logs.version>1.4.2</kumuluzee-logs.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <artifactId>kumuluzee-logs-log4j2</artifactId>
+                <groupId>com.kumuluz.ee.logs</groupId>
+                <version>${kumuluzee-logs.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.kumuluz.ee.cors</groupId>
                 <artifactId>kumuluzee-cors</artifactId>
@@ -99,6 +105,15 @@
                 <groupId>com.kumuluz.ee</groupId>
                 <artifactId>kumuluzee-bom</artifactId>
                 <version>${kumuluz.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>kumuluzee-logs-log4j2</artifactId>
+                <groupId>com.kumuluz.ee.logs</groupId>
+            </dependency>
+            <dependency>
+                <groupId>com.kumuluz.ee.logs</groupId>
+                <artifactId>kumuluzee-logs-common</artifactId>
+                <version>1.4.2</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
